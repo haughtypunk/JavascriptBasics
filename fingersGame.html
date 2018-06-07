@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+  <p> How many fingers ?</p>
+  <p><input type="text" id="fingers"></p>
+  <p><button id="fingerChecker">Submit!</button></p>
+  <script type="text/javascript">
+  document.getElementById("fingerChecker").onclick = function(){
+    var fingerVar = document.getElementById("fingers").value;
+    var fingerRandom = Math.floor(Math.random()*6);
+    if (fingerRandom == fingerVar) {
+      alert("Correct!")
+    } else {
+      alert("Nope!")
+    }
+  }
+  //var fingerVar = document.getElementById("fingers").value;
+  //alert(fingerVar);
+    //alert(Math.floor(Math.random()*6));
+  </script>
+</body>
+</html>

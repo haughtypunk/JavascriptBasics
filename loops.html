@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Javascript</title>
+</head>
+<body>
+  <div id="tweetDiv"></div>
+
+  <script type="text/javascript">
+
+    var tweetString ="";
+
+    var tweets = ["olla","I love Coffee!","Make me a Panda!","olla","I love Coffee!","Make me a Panda!"];
+    for(var i=0;i<tweets.length;i++){
+
+      tweetString = tweetString + "<p>" +tweets[i] + "</p>";
+
+       //alert(tweets[i]);
+    }
+      document.getElementById("tweetDiv").innerHTML = tweetString;
+
+  </script>
+</body>
+</html>
